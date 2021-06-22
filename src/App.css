@@ -148,7 +148,7 @@ main {
 
 /* Profile */
 div.profile {
-  padding: 20px;
+  padding: 20px 40px;
 }
 
 .profile > .profileHeader {
@@ -185,9 +185,64 @@ div.profile {
   right: 0px;
 }
 
-.profile .storeTitle  {
+.profile .storeTitle {
   text-align: center;
   margin-top: 10px;
+}
+
+.profile .storeTitle p {
+  color: #888F9D;
+  font-size: 14px;
+}
+
+/* profile rates */
+.profile .storeRates {
+  background-color: #41c8e625;
+  padding: 25px;
+  margin-top: 20px;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .profile .storeRates div:first-child {
+  border-right: 0.5px solid #99c3c3;
+} */
+
+.profile .vector {
+  display: block;
+  border-left: 1px solid #99c3c3;
+  opacity: 0.5;
+}
+
+.profileStore > .storeRates > div {
+  display: flex;
+  align-items: center;
+}
+
+.storeRates h2 {
+  font-size: 18px;
+  text-align: left;
+  line-height: 22px;
+}
+
+.storeRates pre {
+  font-size: 12px;
+  color: #888F9D;
+}
+
+.profile .storeRates i {
+  background-color: #fff;
+  display: inline-flex;
+  padding: 6px;
+  border-radius: 8px;
+  margin-right: 10px;
+  box-shadow: 0 10px 10px #00000005;
+}
+
+.profile .storeRates i svg path {
+  stroke: #41C8E6;
 }
 
 /* Others */
@@ -207,7 +262,7 @@ div.badge {
   display: inline-flex;
   height: 35%;
   width: 35%;
-  box-shadow: 0px 0px 30px #00000025;
+  box-shadow: 0px 0px 40px #00000020;
   align-items: center;
   justify-content: center;
 }
