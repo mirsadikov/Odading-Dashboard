@@ -374,6 +374,7 @@ main header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 0 -5px;
 }
 
 main header .search {
@@ -382,26 +383,29 @@ main header .search {
   padding: 8px 15px;
   display: flex;
   align-items: center;
+  margin: 0 5px;
   box-shadow: 0 5px 10px #00000005;
 }
 
 main header .search input {
-  margin-left: 10px;
+  background-color: #fff;
   line-height: 25px;
   font-size: 14px;
   outline: none;
   border: none;
   width: 230px;
+  margin-left: 10px;
 }
 
 main header .bell {
+  width: 40px;
   border: none;
   background-color: unset;
 }
 
 main header .bell svg {
-  margin-left: -5px;
   margin-bottom: -5px;
+  margin-left: -5px;
 }
 
 /* Responsive */
@@ -427,9 +431,12 @@ main header .bell svg {
   }
 
   .closeBtn {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
+  /* MAIN */
   .menuBtn {
     display: flex;
     height: 40px;
@@ -439,16 +446,10 @@ main header .bell svg {
     padding: 9px;
     border: none;
     background-color: unset;
-    margin-left: -5px;
-    margin-right: 5px;
   }
 
   .menuBtn svg path {
     stroke: #112650;
-  }
-
-  .profile {
-    height: auto !important;
   }
 
   main {
@@ -462,14 +463,35 @@ main header .bell svg {
 
   main header .search {
     flex-grow: 1;
-    margin-right: 12px;
   }
 
   main header .search input {
-    margin-left: 10px;
     line-height: 25px;
     font-size: 14px;
     width: 170px;
     flex-grow: 1;
+  }
+
+  /* Profile */
+  .profile {
+    height: auto !important;
+    padding: 30px !important;
+  }
+
+  .profile .profileHeader {
+    margin-bottom: 30px;
+  }
+
+  .profile .profileReputation > h3 {
+    margin-top: 20px;
+  }
+
+  .profile .profileReputation > img {
+    margin-top: 20px;
+  }
+
+  .profile .profileStore .storeImg {
+    height: 150px;
+    /* margin-top: 20px; */
   }
 }

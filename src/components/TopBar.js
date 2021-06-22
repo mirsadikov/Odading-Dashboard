@@ -7,10 +7,10 @@ export default function TopBar() {
   const { setToggleMenu, toggleMenu } = useContext(HeaderContext);
   return (
     <header>
+      <button className='menuBtn' onClick={() => setToggleMenu(!toggleMenu)}>
+        <HamburgerIcon />
+      </button>
       <div>
-        <button className='menuBtn' onClick={() => setToggleMenu(!toggleMenu)}>
-          <HamburgerIcon />
-        </button>
         <div className='search'>
           <SearchIcon />
           <input type='text' placeholder='Search the items here' />

@@ -8,6 +8,7 @@ import {
   StatisticsIcon,
   ProductIcon,
   CategoryIcon,
+  CloseIcon,
 } from './Icons';
 
 export default function Sidebar() {
@@ -16,7 +17,7 @@ export default function Sidebar() {
   return (
     <nav className={toggleMenu ? 'sidebar menuShow' : 'sidebar'}>
       <button className='closeBtn' onClick={() => setToggleMenu(!toggleMenu)}>
-        X
+        <CloseIcon />
       </button>
       <header>
         <img src='/images/logo.svg' className='logo' alt='logo' />
