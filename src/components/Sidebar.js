@@ -20,7 +20,7 @@ export default function Sidebar() {
         <h1 className='brand'>Odading Dash</h1>
       </header>
       <ul>
-        <li className={active === 1 && 'active'}>
+        <li className={active === 1 ? 'active' : ''}>
           <Link to='/'>
             <div className='iconContainer'>
               <SummaryIcon />
@@ -28,7 +28,7 @@ export default function Sidebar() {
             <h2>Summary</h2>
           </Link>
         </li>
-        <li className={active === 2 && 'active'}>
+        <li className={active === 2 ? 'active' : ''}>
           <Link to='/transaction'>
             <div className='iconContainer'>
               <TransactionsIcon />
@@ -36,7 +36,7 @@ export default function Sidebar() {
             <h2>Transaction</h2>
           </Link>
         </li>
-        <li className={active === 3 && 'active'}>
+        <li className={active === 3 ? 'active' : ''}>
           <Link to='/statistics'>
             <div className='iconContainer'>
               <StatisticsIcon />
@@ -44,7 +44,7 @@ export default function Sidebar() {
             <h2>Statistics</h2>
           </Link>
         </li>
-        <li className={active === 4 && 'active'}>
+        <li className={active === 4 ? 'active' : ''}>
           <Link to='/product'>
             <div className='iconContainer'>
               <ProductIcon />
@@ -52,7 +52,7 @@ export default function Sidebar() {
             <h2>Product</h2>
           </Link>
         </li>
-        <li className={active === 5 && 'active'}>
+        <li className={active === 5 ? 'active' : ''}>
           <Link to='/category'>
             <div className='iconContainer'>
               <CategoryIcon />

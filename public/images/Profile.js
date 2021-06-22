@@ -10,16 +10,8 @@ export default function Profile() {
 
       <div className='profileStore'>
         <div className='container'>
-          <img src='/images/store.png' alt='' />
-          <div className='badge'>
-            <img src='/images/badge.png' alt='' />
-          </div>
+          <div className='badge'></div>
         </div>
-      </div>
-
-      <div className='storeTitle'>
-        <h3>Toko mang oleh</h3>
-        <p>Ikan hiu makan tomat </p>
       </div>
     </div>
   );
