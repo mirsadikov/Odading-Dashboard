@@ -470,5 +470,6 @@ main header .bell svg {
     line-height: 25px;
     font-size: 14px;
     width: 170px;
+    flex-grow: 1;
   }
 }
