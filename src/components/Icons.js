@@ -395,3 +395,17 @@ export const CloseIcon = () => {
     </svg>
   );
 };
+
+export const OptionIcon = () => {
+  return (
+    <svg
+      width='20'
+      height='6'
+      viewBox='0 0 23 6'
+      fill='none'
+      xmlns='http://www.w3.org/2000/svg'>
+      <circle cx='2.68293' cy='2.88371' r='2.52867' fill='#112650' />
+      <circle cx='19.8779' cy='2.88371' r='2.52867' fill='#112650' />
+    </svg>
+  );
+};

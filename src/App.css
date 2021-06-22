@@ -2,6 +2,8 @@ html,
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: auto;
+  max-width: 1440px;
 }
 * {
   box-sizing: border-box;
@@ -320,10 +322,6 @@ button.optionButton {
   background-color: unset;
 }
 
-button.optionButton img {
-  transform: scale(0.9);
-}
-
 div.badge {
   padding: 10px;
   background-color: #fff;
@@ -372,7 +370,10 @@ div.badge img {
 /* Main */
 main {
   background-color: #f2f3f9;
-  padding: 20px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 main header {
@@ -394,7 +395,7 @@ main header .search {
 
 main header .search input {
   background-color: #fff;
-  line-height: 25px;
+  line-height: 24px;
   font-size: 14px;
   outline: none;
   border: none;
@@ -411,6 +412,78 @@ main header .bell {
 main header .bell svg {
   margin-bottom: -5px;
   margin-left: -5px;
+}
+
+/* Main */
+main section {
+  flex-grow: 1;
+  display: grid;
+  /* background-color: pink; */
+  grid-template-areas:
+    'graph1 graph1'
+    'graph2 graph3';
+  grid-gap: 20px;
+  max-height: 800px;
+}
+
+main .sectionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main .dropdown {
+  background-color: #fff;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  border-radius: 50px;
+}
+
+/* Graphs */
+main .graph {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+main .graph1 {
+  grid-area: graph1;
+  min-height: 200px;
+}
+main .graph2 {
+  grid-area: graph2;
+  min-height: 200px;
+}
+main .graph3 {
+  min-height: 200px;
+  grid-area: graph3;
+  background-color: unset;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+main .graph3 .boxContainer {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.box {
+  flex-grow: 1;
+  min-height: 100px;
+}
+
+main .graphHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* Responsive */
@@ -498,5 +571,26 @@ main header .bell svg {
   .profile .profileStore .storeImg {
     height: 150px;
     /* margin-top: 20px; */
+  }
+
+  /* Main */
+  main {
+    gap: 25px;
+    padding-bottom: 40px;
+  }
+  main section {
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+  }
+
+  main .sectionHeader h2 {
+    font-size: 22px;
+  }
+
+  /* graphs */
+  main section .graph.graph3 .graphHeader {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
