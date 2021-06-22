@@ -11,10 +11,13 @@ import {
 } from './Icons';
 
 export default function Sidebar() {
-  const { active } = useContext(HeaderContext);
+  const { active, toggleMenu, setToggleMenu } = useContext(HeaderContext);
 
   return (
-    <nav className='sidebar'>
+    <nav className={toggleMenu ? 'sidebar menuShow' : 'sidebar'}>
+      <button className='closeBtn' onClick={() => setToggleMenu(!toggleMenu)}>
+        X
+      </button>
       <header>
         <img src='/images/logo.svg' className='logo' alt='logo' />
         <h1 className='brand'>Odading Dash</h1>

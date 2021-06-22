@@ -6,23 +6,20 @@
   color: #112650;
 }
 
-html,
-body,
-#root {
-  height: 100%;
-}
-
 .App {
-  height: 100%;
+  height: 100vh;
   display: grid;
   grid-template-columns: 8fr 26fr 13fr;
 }
 
 /* Sidebar */
 .sidebar {
+  z-index: 9;
+  justify-self: right;
   background-color: #fff;
   display: flex;
   flex-direction: column;
+  max-width: 400px;
 }
 /* Header */
 .sidebar header {
@@ -148,15 +145,26 @@ main {
 
 /* Profile */
 div.profile {
-  padding: 20px 40px;
+  padding: 20px 45px 25px;
+  position: relative;
+  height: 100%;
+  max-width: 400px;
 }
 
-.profile > .profileHeader {
+.profile > .container {
+  height: 100%;
+}
+
+.profileContainer {
+  height: 55%;
+}
+
+.profile .profileHeader {
   display: flex;
   justify-content: space-between;
 }
 
-.profile > .profileHeader > h1 {
+.profile .profileHeader > h1 {
   font-weight: 600;
   font-size: 20px;
   line-height: 30px;
@@ -165,9 +173,12 @@ div.profile {
 
 /* Profile Store Img */
 .profile .profileStore {
-  height: 20%;
-  margin-top: 15px;
+  margin-top: 25px;
   text-align: center;
+}
+
+.profile .storeImg {
+  height: 100px;
 }
 
 .profileStore .container {
@@ -176,13 +187,11 @@ div.profile {
   height: 100%;
 }
 
-.profileStore .container > img {
-  height: 100%;
-}
-
 .profileStore .container div.badge {
   position: absolute;
   right: 0px;
+  height: 35%;
+  width: 35%;
 }
 
 .profile .storeTitle {
@@ -191,19 +200,19 @@ div.profile {
 }
 
 .profile .storeTitle p {
-  color: #888F9D;
+  color: #888f9d;
   font-size: 14px;
 }
 
 /* profile rates */
 .profile .storeRates {
   background-color: #41c8e625;
-  padding: 25px;
+  padding: 20px 0;
   margin-top: 20px;
   border-radius: 10px;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 /* .profile .storeRates div:first-child {
@@ -229,7 +238,7 @@ div.profile {
 
 .storeRates pre {
   font-size: 12px;
-  color: #888F9D;
+  color: #888f9d;
 }
 
 .profile .storeRates i {
@@ -242,7 +251,66 @@ div.profile {
 }
 
 .profile .storeRates i svg path {
-  stroke: #41C8E6;
+  stroke: #41c8e6;
+}
+
+/* reputation */
+.profile .profileReputation {
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.profile .profileReputation h3 {
+  margin-bottom: 20px;
+}
+
+.profile .profileReputation .badge {
+  height: 45px;
+  width: 45px;
+}
+
+.profile .profileReputation .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile .profileReputation .progressContainer {
+  flex-grow: 1;
+  margin-left: 15px;
+}
+
+.profile .profileReputation .progressTitleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  line-height: 15px;
+}
+.profile .progressTitleContainer pre {
+  font-size: 14px;
+}
+
+.profile .progress {
+  height: 4px;
+  width: 100%;
+  background-color: #1e808425;
+  border-radius: 5px;
+}
+
+.profile .progress .progress-bar {
+  height: 4px;
+  width: 86%;
+  background-color: #73d9f2;
+  border-radius: 5px;
+}
+.profile .profileReputation > img {
+  display: block;
+  max-height: 180px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 /* Others */
@@ -260,13 +328,69 @@ div.badge {
   background-color: #fff;
   border-radius: 15px;
   display: inline-flex;
-  height: 35%;
-  width: 35%;
-  box-shadow: 0px 0px 40px #00000020;
+  box-shadow: 0px 10px 30px #00000015;
   align-items: center;
   justify-content: center;
 }
 
 div.badge img {
   height: 100%;
+}
+
+.menuShow {
+  transform: translateX(0) !important;
+}
+
+.sidebar {
+  transition: transform 0.3s ease;
+}
+
+.closeBtn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
+  border: 1px solid #112650;
+  display: none;
+}
+
+.menuBtn {
+  display: none;
+}
+
+/* Responsive */
+/* Responsive */
+/* Responsive */
+/* Responsive */
+@media (max-width: 400px) {
+  .App {
+    display: block;
+    height: 100%;
+  }
+  .sidebar {
+    position: fixed;
+    overflow: hidden;
+    width: 100vw;
+    height: 100%;
+    transform: translateX(-100vw);
+  }
+
+  .sidebar .download {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .closeBtn {
+    display: block;
+  }
+
+  .menuBtn {
+    display: block;
+  }
+
+  .profile {
+    height: auto !important;
+  }
 }
