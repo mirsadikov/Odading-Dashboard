@@ -15,7 +15,9 @@ export default function Main() {
   return (
     <>
       <TopBar />
-      <h1>Main</h1>
+      <div className='center'>
+        <h1>Main</h1>
+      </div>
     </>
   );
 }

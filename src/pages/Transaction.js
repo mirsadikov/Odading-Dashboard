@@ -13,9 +13,11 @@ export default function Transaction() {
   }, []);
 
   return (
-    <main>
+    <>
       <TopBar />
-      <h1>Transaction</h1>
-    </main>
+      <div className='center'>
+        <h1>Transaction</h1>
+      </div>
+    </>
   );
 }

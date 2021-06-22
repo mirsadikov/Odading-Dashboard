@@ -8,14 +8,16 @@ export default function Category() {
 
   useEffect(() => {
     setActive(5);
-    setToggleMenu(false)
+    setToggleMenu(false);
     // eslint-disable-next-line
   }, []);
 
   return (
-    <main>
+    <>
       <TopBar />
-      <h1>Category</h1>
-    </main>
+      <div className='center'>
+        <h1>Category</h1>
+      </div>
+    </>
   );
 }

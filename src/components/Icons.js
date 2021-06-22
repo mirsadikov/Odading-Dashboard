@@ -269,3 +269,99 @@ export const FollowersIcon = () => {
     </svg>
   );
 };
+
+export const BellIcon = () => {
+  return (
+    <svg
+      width='28'
+      height='25'
+      viewBox='0 0 28 25'
+      fill='none'
+      xmlns='http://www.w3.org/2000/svg'>
+      <path
+        d='M8.63265 19.4593H24.8161'
+        stroke='#112650'
+        strokeWidth='1.50177'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+      />
+      <path
+        d='M16.7251 5.29898V3.27605'
+        stroke='#112650'
+        strokeWidth='1.50177'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+      />
+      <path
+        d='M9.6447 12.3792C9.6447 8.46892 12.8146 5.29898 16.725 5.29898V5.29898C20.6353 5.29898 23.8052 8.46893 23.8052 12.3793V19.4595H9.6447V12.3792Z'
+        stroke='#112650'
+        strokeWidth='1.50177'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+      />
+      <path
+        d='M14.9737 19.4589V18.708C14.7056 18.708 14.4578 18.8509 14.3236 19.083L14.9737 19.4589ZM18.4786 19.4589L19.1287 19.083C18.9945 18.8509 18.7467 18.708 18.4786 18.708V19.4589ZM15.4541 20.47C15.4541 20.2371 15.516 20.021 15.6237 19.8347L14.3236 19.083C14.0873 19.4917 13.9523 19.9662 13.9523 20.47H15.4541ZM16.7262 21.7421C16.0236 21.7421 15.4541 21.1725 15.4541 20.47H13.9523C13.9523 22.0019 15.1942 23.2438 16.7262 23.2438V21.7421ZM17.9982 20.47C17.9982 21.1725 17.4287 21.7421 16.7262 21.7421V23.2438C18.2581 23.2438 19.5 22.0019 19.5 20.47H17.9982ZM17.8286 19.8347C17.9363 20.021 17.9982 20.2371 17.9982 20.47H19.5C19.5 19.9662 19.365 19.4917 19.1287 19.083L17.8286 19.8347ZM18.4786 18.708H14.9737V20.2097H18.4786V18.708Z'
+        fill='#112650'
+      />
+      <circle cx='23.2443' cy='5.51281' r='4.09289' fill='#AF7FCB' />
+    </svg>
+  );
+};
+
+export const SearchIcon = () => {
+  return (
+    <svg
+      width='19'
+      height='19'
+      viewBox='0 0 19 19'
+      fill='none'
+      xmlns='http://www.w3.org/2000/svg'>
+      <circle
+        cx='8.92963'
+        cy='8.57429'
+        r='7.18458'
+        stroke='#112650'
+        strokeWidth='1.50177'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+      />
+      <path
+        d='M13.7866 13.9445L17.4154 17.5732'
+        stroke='#112650'
+        strokeWidth='1.50177'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+      />
+    </svg>
+  );
+};
+
+export const HamburgerIcon = () => {
+  return (
+    <svg
+      width='34'
+      height='29'
+      viewBox='0 0 34 29'
+      fill='none'
+      xmlns='http://www.w3.org/2000/svg'>
+      <path
+        d='M2 2H32'
+        stroke='black'
+        strokeWidth='2.5'
+        strokeLinecap='round'
+      />
+      <path
+        d='M2 14H32'
+        stroke='black'
+        strokeWidth='2.5'
+        strokeLinecap='round'
+      />
+      <path
+        d='M2 27H32'
+        stroke='black'
+        strokeWidth='2.5'
+        strokeLinecap='round'
+      />
+    </svg>
+  );
+};

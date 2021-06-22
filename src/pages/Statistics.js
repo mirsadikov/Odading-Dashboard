@@ -13,9 +13,11 @@ export default function Statistics() {
   }, []);
   
   return (
-    <main>
-      <TopBar />
+    <>
+    <TopBar />
+    <div className='center'>
       <h1>Statistics</h1>
-    </main>
+    </div>
+  </>
   );
 }

@@ -13,9 +13,11 @@ export default function Product() {
   }, []);
 
   return (
-    <main>
+    <>
       <TopBar />
-      <h1>Products</h1>
-    </main>
+      <div className='center'>
+        <h1>Product</h1>
+      </div>
+    </>
   );
 }
