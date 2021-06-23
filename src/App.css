@@ -947,7 +947,7 @@ h4 {
     overflow: hidden;
     height: 100%;
     transform: translateX(-100vw);
-    box-shadow: 0 0 300px #00000050
+    box-shadow: 0 0 300px #00000050;
   }
 
   .menuBtn {
@@ -988,7 +988,6 @@ h4 {
   .profileReputation > img {
     margin-top: 20px !important;
   }
-  
 }
 
 @media (max-width: 599px) and (min-width: 451px) {
@@ -1001,7 +1000,7 @@ h4 {
     overflow: hidden;
     height: 100%;
     transform: translateX(-100vw);
-    box-shadow: 0 0 300px #00000050
+    box-shadow: 0 0 300px #00000050;
   }
 
   .closeBtn {
@@ -1099,7 +1098,7 @@ h4 {
   .graph2 .container {
     flex-direction: row;
   }
-  
+
   main .graph2 .chartContainer {
     max-width: 30% !important;
   }
@@ -1115,7 +1114,7 @@ h4 {
   .graph1 .chartDetails {
     margin: 15px 0 15px -10px;
   }
-  .graph2 .chartDetails{
+  .graph2 .chartDetails {
     flex-direction: column;
     gap: 5px !important;
     /* justify-content: flex-start !important; */
