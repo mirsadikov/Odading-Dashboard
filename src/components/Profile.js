@@ -1,4 +1,5 @@
-import { ProductIcon, FollowersIcon, OptionIcon } from './Icons';
+import { ProductIcon, FollowersIcon } from './Icons';
+import OptionsButton from '../components/OptionsButton';
 
 export default function Profile() {
   return (
@@ -7,9 +8,7 @@ export default function Profile() {
         <div className='profileContainer'>
           <div className='profileHeader'>
             <h1>Shop Profile</h1>
-            <button className='optionButton'>
-              <OptionIcon />
-            </button>
+            <OptionsButton />
           </div>
 
           <div className='profileStore'>

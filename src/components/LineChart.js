@@ -3,11 +3,11 @@ import { Line } from 'react-chartjs-2';
 
 import {
   LinearChartIcon,
-  OptionIcon,
   PieChartIcon,
   ThisMonthIcon,
   LastMonthIcon,
 } from '../components/Icons';
+import OptionsButton from '../components/OptionsButton';
 
 const monthly = {
   labels: ['Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
@@ -85,7 +85,7 @@ const LineChart = React.memo(({ selection }) => {
               onClick={() => setGraphType('pie')}
             />
           </div>
-          <OptionIcon />
+          <OptionsButton />
         </div>
 
         {graphType === 'line' ? (

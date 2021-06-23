@@ -1,7 +1,7 @@
 import React from 'react';
 import { Doughnut } from 'react-chartjs-2';
 
-import { OptionIcon } from '../components/Icons';
+import OptionsButton from '../components/OptionsButton';
 
 const data = {
   labels: ['Orders', 'Sales'],
@@ -32,7 +32,7 @@ const DoughnutChart = React.memo(() => {
       <div className='graph graph2'>
         <div className='graphHeader'>
           <h3>Conversations</h3>
-          <OptionIcon />
+          <OptionsButton />
         </div>
         <div className='container'>
           <div className='chartContainer'>

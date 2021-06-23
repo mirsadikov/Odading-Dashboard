@@ -2,7 +2,7 @@ import { useEffect, useContext, useState } from 'react';
 
 import { HeaderContext } from '../context/headerContext';
 import TopBar from '../components/TopBar.js';
-import { OptionIcon } from '../components/Icons';
+import OptionsButton from '../components/OptionsButton';
 import LineChart from '../components/LineChart';
 import DoughnutChart from '../components/DoughnutChart';
 
@@ -42,7 +42,7 @@ export default function Main() {
           <div className='graph graph3'>
             <div className='graphHeader'>
               <h3>Top Categories</h3>
-              <OptionIcon />
+              <OptionsButton />
             </div>
             <div className='boxContainer'>
               <div className='box graph box1'>

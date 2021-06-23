@@ -163,6 +163,7 @@ div.profile {
 .profile .profileHeader {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .profile .profileHeader > h1 {
@@ -664,6 +665,37 @@ main .graph3 .boxContainer {
 
 .box .categoryDetails {
   width: 50%;
+}
+
+.optionsTable {
+  position: absolute;
+  top: 130%;
+  right: 0px;
+  display: none;
+  box-shadow: 0 0 5px #a1a1a1;
+  background-color: #f3f3f3;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 150px;
+  z-index: 9999;
+}
+
+.optionsTable p {
+  border-bottom: 1px solid #11265050;
+  display: block;
+  line-height: 25px;
+}
+.optionsTable p:last-child {
+  border-bottom: none;
+}
+
+img, p, h1, h2, h3, h4 {
+  user-select: none;
+}
+
+.optionsVisible {
+  display: block;
 }
 
 /* Responsive */
