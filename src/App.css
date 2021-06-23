@@ -480,12 +480,11 @@ main .graph1 {
 
 main .graph1 .container {
   display: flex;
-  gap: 15px;
   flex-grow: 1;
 }
 
 main .graph1 .chartContainer {
-  flex: 70%;
+  flex: 70% 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -493,7 +492,6 @@ main .graph1 .chartContainer {
 }
 
 main .graph1 .chartDetails {
-  flex: 30%;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -516,7 +514,7 @@ main .graph1 .iconContainer {
 }
 
 .graph1 .chartDetailsRow h2 {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 26px;
 }
 
@@ -633,7 +631,9 @@ main .graph3 .boxContainer {
 .box img {
   width: 15%;
 }
-
+.boxContainer .box h4 {
+  font-size: 18px;
+}
 .boxContainer .box p {
   opacity: 0.7;
   font-size: 14px;
@@ -644,6 +644,24 @@ main .graph3 .boxContainer {
   width: 50%;
 }
 
+/* Responsive */
+/* Responsive */
+/* Responsive */
+/* Responsive */
+/* Responsive */
+/* Responsive */
+/* Responsive */
+/* Responsive */
+/* Responsive */
+/* Responsive */
+/* Responsive */
+/* Responsive */
+/* Responsive */
+/* Responsive */
+/* Responsive */
+/* Responsive */
+/* Responsive */
+/* Responsive */
 /* Responsive */
 /* Responsive */
 /* Responsive */
@@ -764,7 +782,7 @@ main .graph3 .boxContainer {
   }
 
   .graph1 .chartDetails {
-    margin-bottom: 15px;
+    margin: 15px 0 15px -10px;
   }
 
   .graph2 .chartDetails p {
@@ -794,5 +812,9 @@ main .graph3 .boxContainer {
 @media (min-height: 700px) and (max-width: 1440px) {
   main .graph2 .chartContainer {
     max-width: 55%;
+  }
+
+  main .graph1 .chartContainer {
+    max-width: 65%;
   }
 }

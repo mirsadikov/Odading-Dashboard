@@ -14,7 +14,7 @@ const linechartData = {
   datasets: [
     {
       label: '1',
-      data: [3500, 5500, 5300, 3400, 4700, 3000, 5600],
+      data: [3500, 5500, 5300, 3400, 4700, 4000, 7200],
       fill: false,
       borderColor: '#8EEAFF',
       tension: 0.1,
@@ -22,7 +22,7 @@ const linechartData = {
     {
       label: '2',
 
-      data: [2000, 1500, 3000, 2500, 4800, 2000, 4800],
+      data: [2000, 1500, 3000, 2500, 5200, 3000, 4910],
       fill: false,
       borderColor: '#A684CB',
       tension: 0.1,
@@ -40,8 +40,8 @@ const options = {
   scales: {
     y: {
       display: true,
-      suggestedMin: 1500,
-      suggestedMax: 7000,
+      suggestedMin: 0,
+      suggestedMax: 10000,
     },
   },
 };
