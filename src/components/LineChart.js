@@ -97,12 +97,14 @@ const LineChart = React.memo(() => {
             </div>
           </div>
         ) : (
-          <div className='container'>
+          <div
+            className='container chartPlaceholder'
+            style={{ alignItems: 'center', justifyContent: 'center' }}>
             <h1
               style={{
+                flexGrow: 'none',
                 alignSelf: 'center',
                 justifySelf: 'center',
-                flexGrow: 1,
                 textAlign: 'center',
               }}>
               Some another chart
