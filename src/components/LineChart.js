@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Line } from 'react-chartjs-2';
 
 import {
@@ -46,7 +46,7 @@ const options = {
   },
 };
 
-export default function LineChart() {
+const LineChart = React.memo(() => {
   const [graphType, setGraphType] = useState('line');
 
   return (
@@ -66,35 +66,52 @@ export default function LineChart() {
           </div>
           <OptionIcon />
         </div>
-        <div className='container'>
-          <div className='chartContainer'>
-            <Line className='chart1' data={linechartData} options={options} />
-          </div>
 
-          <div className='chartDetails'>
-            <div className='chartDetailsRow'>
-              <i style={{ backgroundColor: '#41c8e625' }}>
-                <ThisMonthIcon />
-              </i>
-              <div>
-                <h2>$7.200</h2>
-                <p>This month</p>
-              </div>
-              <pre className='green'>&#8599; 8.2%</pre>
+        {graphType === 'line' ? (
+          <div className='container'>
+            <div className='chartContainer'>
+              <Line className='chart1' data={linechartData} options={options} />
             </div>
-            <div className='chartDetailsRow'>
-              <i style={{ backgroundColor: '#a885cd25' }}>
-                <LastMonthIcon />
-              </i>
-              <div>
-                <h2>$4.910</h2>
-                <p>Last month</p>
+
+            <div className='chartDetails'>
+              <div className='chartDetailsRow'>
+                <i style={{ backgroundColor: '#41c8e625' }}>
+                  <ThisMonthIcon />
+                </i>
+                <div>
+                  <h2>$7.200</h2>
+                  <p>This month</p>
+                </div>
+                <pre className='green'>&#8599; 8.2%</pre>
               </div>
-              <pre></pre>
+              <div className='chartDetailsRow'>
+                <i style={{ backgroundColor: '#a885cd25' }}>
+                  <LastMonthIcon />
+                </i>
+                <div>
+                  <h2>$4.910</h2>
+                  <p>Last month</p>
+                </div>
+                <pre></pre>
+              </div>
             </div>
           </div>
-        </div>
+        ) : (
+          <div className='container'>
+            <h1
+              style={{
+                alignSelf: 'center',
+                justifySelf: 'center',
+                flexGrow: 1,
+                textAlign: 'center',
+              }}>
+              Some another chart
+            </h1>
+          </div>
+        )}
       </div>
     </>
   );
-}
+});
+
+export default LineChart;
