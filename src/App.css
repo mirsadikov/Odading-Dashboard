@@ -715,6 +715,10 @@ h4 {
   border-top-left-radius: 25px 30px;
 }
 
+.menuBtn svg path {
+  stroke: #112650;
+}
+
 /* Responsive */
 /* Responsive */
 /* Responsive */
@@ -887,5 +891,256 @@ h4 {
 
   main .graph1 .chartContainer {
     max-width: 65%;
+  }
+}
+
+@media (max-width: 1120px) and (min-width: 800px) {
+  .App {
+    display: block;
+    height: 100%;
+  }
+
+  .sidebar {
+    position: fixed;
+    width: 25%;
+    height: 100vh;
+    box-shadow: 0 0 10px #00000015;
+  }
+  main {
+    margin-left: auto;
+    width: 75%;
+  }
+
+  .profile {
+    margin-left: auto;
+    padding: 25px !important;
+    width: 75%;
+    max-width: unset !important;
+  }
+
+  .profileContainer {
+    height: 100% !important;
+  }
+  .profile > .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+
+  .profileReputation {
+    height: 100% !important;
+    justify-content: flex-start !important;
+  }
+
+  .profileReputation > img {
+    margin-top: 20px !important;
+  }
+}
+
+@media (max-width: 799px) and (min-width: 600px) {
+  .App {
+    display: block;
+    height: 100%;
+  }
+  .sidebar {
+    position: fixed;
+    overflow: hidden;
+    height: 100%;
+    transform: translateX(-100vw);
+    box-shadow: 0 0 300px #00000050
+  }
+
+  .menuBtn {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+    padding: 9px;
+    border: none;
+    background-color: unset;
+  }
+  .closeBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profile {
+    padding: 30px !important;
+    max-width: unset !important;
+  }
+
+  .profileContainer {
+    height: 100% !important;
+  }
+  .profile > .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .profileReputation {
+    height: 100% !important;
+    justify-content: flex-start !important;
+  }
+
+  .profileReputation > img {
+    margin-top: 20px !important;
+  }
+  
+}
+
+@media (max-width: 599px) and (min-width: 451px) {
+  .App {
+    display: block;
+    height: 100%;
+  }
+  .sidebar {
+    position: fixed;
+    overflow: hidden;
+    height: 100%;
+    transform: translateX(-100vw);
+    box-shadow: 0 0 300px #00000050
+  }
+
+  .closeBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* MAIN */
+  .menuBtn {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+    padding: 9px;
+    border: none;
+    background-color: unset;
+  }
+
+  main {
+    padding: 25px;
+  }
+
+  main header > div {
+    display: flex;
+    flex-grow: 1;
+  }
+
+  main header .search {
+    flex-grow: 1;
+  }
+
+  main header .search input {
+    width: 170px;
+    flex-grow: 1;
+  }
+
+  /* Profile */
+  .profile {
+    height: auto !important;
+    padding: 30px !important;
+    max-width: 100% !important;
+  }
+
+  .profile .profileHeader {
+    margin-bottom: 30px;
+  }
+
+  .profile .profileReputation > h3 {
+    margin-top: 20px;
+  }
+
+  .profile .profileReputation > img {
+    margin-top: 20px;
+  }
+
+  .profile .profileStore .storeImg {
+    height: 150px;
+    /* margin-top: 20px; */
+  }
+
+  /* Main */
+  main {
+    gap: 25px;
+    padding-bottom: 40px;
+  }
+  main section {
+    gap: 25px;
+    max-height: none;
+  }
+
+  main .sectionHeader h2 {
+    font-size: 22px;
+  }
+
+  /* graphs */
+  main section .graph.graph3 .graphHeader {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  main .graph1 .chartContainer {
+    width: 100%;
+  }
+
+  main .graph1 .chartDetails {
+    flex-direction: row;
+  }
+
+  .graph1 .chartDetailsRow {
+    padding: 10px 0;
+  }
+
+  .graph2 .container {
+    flex-direction: row;
+  }
+  
+  main .graph2 .chartContainer {
+    max-width: 30% !important;
+  }
+
+  main .graph1 .container {
+    flex-direction: column;
+  }
+
+  main .graph1 .chartContainer {
+    max-width: 98% !important;
+  }
+
+  .graph1 .chartDetails {
+    margin: 15px 0 15px -10px;
+  }
+  .graph2 .chartDetails{
+    flex-direction: column;
+    gap: 5px !important;
+    /* justify-content: flex-start !important; */
+    margin: auto auto auto 0 !important;
+  }
+  .graph2 .chartDetails p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .chartPlaceholder {
+    height: 300px;
+  }
+
+  /* category */
+  main .boxContainer .box p {
+    font-size: 14px;
+  }
+
+  main .box {
+    padding: 20px !important;
+  }
+
+  main div.row:last-child {
+    flex-direction: column !important;
+    gap: 25px;
   }
 }
