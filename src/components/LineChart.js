@@ -9,7 +9,7 @@ import {
   LastMonthIcon,
 } from '../components/Icons';
 
-const linechartData = {
+const monthly = {
   labels: ['Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
   datasets: [
     {
@@ -30,6 +30,27 @@ const linechartData = {
   ],
 };
 
+const weekly = {
+  labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+  datasets: [
+    {
+      label: '1',
+      data: [200, 300, 320, 280, 450, 400, 500],
+      fill: false,
+      borderColor: '#8EEAFF',
+      tension: 0.1,
+    },
+    {
+      label: '2',
+
+      data: [400, 150, 330, 420, 530, 230, 350],
+      fill: false,
+      borderColor: '#A684CB',
+      tension: 0.1,
+    },
+  ],
+};
+
 const options = {
   plugins: {
     legend: {
@@ -37,16 +58,16 @@ const options = {
     },
   },
   responsive: true,
-  scales: {
-    y: {
-      display: true,
-      suggestedMin: 0,
-      suggestedMax: 10000,
-    },
-  },
+  // scales: {
+  //   y: {
+  //     display: true,
+  //     suggestedMin: 0,
+  //     suggestedMax: 10000,
+  //   },
+  // },
 };
 
-const LineChart = React.memo(() => {
+const LineChart = React.memo(({ selection }) => {
   const [graphType, setGraphType] = useState('line');
 
   return (
@@ -70,7 +91,11 @@ const LineChart = React.memo(() => {
         {graphType === 'line' ? (
           <div className='container'>
             <div className='chartContainer'>
-              <Line className='chart1' data={linechartData} options={options} />
+              <Line
+                className='chart1'
+                data={selection === 'monthly' ? monthly : weekly}
+                options={options}
+              />
             </div>
 
             <div className='chartDetails'>

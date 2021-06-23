@@ -1,4 +1,4 @@
-import { useEffect, useContext } from 'react';
+import { useEffect, useContext, useState } from 'react';
 
 import { HeaderContext } from '../context/headerContext';
 import TopBar from '../components/TopBar.js';
@@ -8,6 +8,7 @@ import DoughnutChart from '../components/DoughnutChart';
 
 export default function Main() {
   const { setActive, setToggleMenu } = useContext(HeaderContext);
+  const [selection, setSelection] = useState('monthly');
 
   useEffect(() => {
     setActive(1);
@@ -20,11 +21,19 @@ export default function Main() {
       <TopBar />
       <div className='sectionHeader'>
         <h2>My Performance</h2>
-        <div className='dropdown'>Dropdown</div>
+        <div className='select-wrapper'>
+          <select
+            className='dropdown'
+            value={selection}
+            onChange={(e) => setSelection(e.target.value)}>
+            <option value='monthly'>Monthly</option>
+            <option value='weekly'>Weekly</option>
+          </select>
+        </div>
       </div>
       <section>
         <div className='row'>
-          <LineChart />
+          <LineChart selection={selection} />
         </div>
 
         <div className='row'>
