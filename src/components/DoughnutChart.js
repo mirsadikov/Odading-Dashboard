@@ -27,7 +27,6 @@ const options = {
 };
 
 const DoughnutChart = React.memo(() => {
-  console.log('render');
   return (
     <>
       <div className='graph graph2'>

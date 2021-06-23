@@ -518,3 +518,131 @@ export const PieChartIcon = ({ solid, ...restProps }) => {
     </svg>
   );
 };
+
+export const ThisMonthIcon = () => {
+  return (
+    <svg
+      width='23'
+      height='17'
+      viewBox='0 0 23 17'
+      fill='none'
+      xmlns='http://www.w3.org/2000/svg'>
+      <path
+        d='M13.1177 15.7359H3.58554C2.4205 15.7359 1.46729 14.7827 1.46729 13.6176V4.93277C1.46729 3.76773 2.4205 2.81451 3.58554 2.81451H16.7187C17.8838 2.81451 18.837 3.76773 18.837 4.93277V10.1225'
+        stroke='#41C8E6'
+        strokeWidth='1.10129'
+        strokeMiterlimit='10'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+      />
+      <path
+        d='M5.70163 4.19109V1.54327'
+        stroke='#41C8E6'
+        strokeWidth='1.10129'
+        strokeMiterlimit='10'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+      />
+      <path
+        d='M14.599 4.19109V1.54327'
+        stroke='#41C8E6'
+        strokeWidth='1.10129'
+        strokeMiterlimit='10'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+      />
+      <path
+        d='M13.965 13.1937L16.6128 15.9474L21.6966 10.8636'
+        stroke='#41C8E6'
+        strokeWidth='1.10129'
+        strokeMiterlimit='10'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+      />
+      <path
+        d='M6.65773 8.21606H13.5421'
+        stroke='#41C8E6'
+        strokeWidth='1.10129'
+        strokeMiterlimit='10'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+      />
+      <path
+        d='M8.45694 10.8636H11.8461'
+        stroke='#41C8E6'
+        strokeWidth='1.10129'
+        strokeMiterlimit='10'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+      />
+    </svg>
+  );
+};
+
+export const LastMonthIcon = () => {
+  return (
+    <svg
+      width='23'
+      height='17'
+      viewBox='0 0 23 17'
+      fill='none'
+      xmlns='http://www.w3.org/2000/svg'>
+      <path
+        d='M12.5502 14.9946H3.61913C2.4355 14.9946 1.46707 14.0261 1.46707 12.8425V4.01906C1.46707 2.83543 2.4355 1.867 3.61913 1.867H17.0695C18.2531 1.867 19.2216 2.83543 19.2216 4.01906V7.13955'
+        stroke='#A885CD'
+        strokeWidth='1.10129'
+        strokeMiterlimit='10'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+      />
+      <path
+        d='M5.8748 3.26551V0.575439'
+        stroke='#A885CD'
+        strokeWidth='1.10129'
+        strokeMiterlimit='10'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+      />
+      <path
+        d='M14.9142 3.26551V0.575439'
+        stroke='#A885CD'
+        strokeWidth='1.10129'
+        strokeMiterlimit='10'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+      />
+      <path
+        d='M15.7777 10.1524C16.4234 9.61443 17.2842 9.29163 18.145 9.29163C20.0819 9.29163 21.6959 10.9057 21.6959 12.8425C21.6959 14.7794 20.0819 16.3934 18.145 16.3934C16.2082 16.3934 14.5941 14.7794 14.5941 12.8425'
+        stroke='#A885CD'
+        strokeWidth='1.10129'
+        strokeMiterlimit='10'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+      />
+      <path
+        d='M17.4985 10.7984L15.6693 10.1527L16.3149 8.32349'
+        stroke='#A885CD'
+        strokeWidth='1.10129'
+        strokeMiterlimit='10'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+      />
+      <path
+        d='M6.84691 7.35437H13.8411'
+        stroke='#A885CD'
+        strokeWidth='1.10129'
+        strokeMiterlimit='10'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+      />
+      <path
+        d='M8.6757 10.0447H12.119'
+        stroke='#A885CD'
+        strokeWidth='1.10129'
+        strokeMiterlimit='10'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+      />
+    </svg>
+  );
+};
