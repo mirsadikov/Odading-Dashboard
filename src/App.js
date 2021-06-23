@@ -26,7 +26,11 @@ function App() {
           </main>
           <Profile />
         </div>
-        <div className='author'>Made by Abror</div>
+        <div className='author'>
+          <a href='https://github.com/mirsadikov/Odading-Dashboard' target="blank">
+            Made by Abror
+          </a>
+        </div>
       </Router>
     </HeaderProvider>
   );
