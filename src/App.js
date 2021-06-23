@@ -9,7 +9,6 @@ import Product from './pages/Product.js';
 import Category from './pages/Category.js';
 import Profile from './components/Profile.js';
 
-
 import { HeaderProvider } from './context/headerContext';
 
 function App() {
@@ -27,6 +26,7 @@ function App() {
           </main>
           <Profile />
         </div>
+        <div className='author'>Made by Abror</div>
       </Router>
     </HeaderProvider>
   );

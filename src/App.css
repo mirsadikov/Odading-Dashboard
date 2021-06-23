@@ -690,12 +690,29 @@ main .graph3 .boxContainer {
   border-bottom: none;
 }
 
-img, p, h1, h2, h3, h4 {
+img,
+p,
+h1,
+h2,
+h3,
+h4 {
   user-select: none;
 }
 
 .optionsVisible {
   display: block;
+}
+
+.author {
+  position: fixed;
+  bottom: 80px;
+  right: -55px;
+  font-size: 12px;
+  background-color: rgb(255, 183, 142);
+  padding: 0 20px;
+  transform: rotate(-90deg);
+  border-top-right-radius: 25px 30px;
+  border-top-left-radius: 25px 30px;
 }
 
 /* Responsive */
