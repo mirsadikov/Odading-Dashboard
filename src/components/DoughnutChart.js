@@ -1,3 +1,4 @@
+import React from 'react';
 import { Doughnut } from 'react-chartjs-2';
 
 import { OptionIcon } from '../components/Icons';
@@ -25,7 +26,8 @@ const options = {
   cutout: '60%',
 };
 
-export default function DoughnutChart() {
+const DoughnutChart = React.memo(() => {
+  console.log('render');
   return (
     <>
       <div className='graph graph2'>
@@ -45,4 +47,6 @@ export default function DoughnutChart() {
       </div>
     </>
   );
-}
+});
+
+export default DoughnutChart;
