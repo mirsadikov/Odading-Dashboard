@@ -3,7 +3,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: auto;
-  max-width: 1440px;
+  /* max-width: 1440px; */
 }
 * {
   box-sizing: border-box;
@@ -22,11 +22,11 @@ body {
 /* Sidebar */
 .sidebar {
   z-index: 9;
-  justify-self: right;
+  /* justify-self: right; */
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  max-width: 450px;
+  /* max-width: 450px; */
 }
 /* Header */
 .sidebar header {
@@ -149,7 +149,7 @@ div.profile {
   padding: 20px 45px 25px;
   position: relative;
   height: 100%;
-  max-width: 400px;
+  /* max-width: 400px; */
 }
 
 .profile > .container {
@@ -1142,4 +1142,61 @@ h4 {
     flex-direction: column !important;
     gap: 25px;
   }
+}
+
+@media (min-width: 1440px) {
+  .App {
+    grid-template-columns: 8fr 30fr 13fr;
+  }
+  
+  h1.brand {
+    font-size: 22px !important;
+  }
+  div.profileStore {
+    margin-top: 35px !important;
+  }
+  .profile h3, .profile h1 {
+    font-size: 24px !important;
+  }
+  .sidebar ul h2 {
+    font-size: 20px !important;
+  }
+  
+  main section {
+    max-height: none;
+  }
+  .graphHeader h3 {
+    font-size: 24px;
+  }
+  .graph1 .chartDetails h2 {
+    font-size: 22px;
+  }
+  .graph1 .chartDetails p {
+    font-size: 16px;
+  }
+  main .graph2 {
+    flex: 40% 1;
+}
+  main .graph2 .chartContainer {
+    max-width: 55% !important;
+  }
+
+  .graph2 .chartDetails p {
+    font-size: 20px !important;
+  }
+
+  .boxContainer .box h4 {
+    font-size: 22px;
+  }
+  .boxContainer .box p {
+    font-size: 17px;
+    line-height: 18px;
+  }
+  .categoryPrice h3 {
+    font-size: 22px;
+  }
+  main .graph1 .chartContainer {
+    flex: 65% 1;
+    max-width: 65%;
+}
 }
